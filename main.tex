@@ -1,0 +1,374 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[a4paper,left=1.5in,right=1.0in,top=1.0in,bottom=1.0in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.75 cm}
+\usepackage{mathptmx}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{tabto}
+\usepackage{hyperref}
+\usepackage[format=plain,
+            labelfont={bf,it},
+            textfont=it]{caption}
+
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\begin{LARGE}
+				\textbf{INSIGHT SCOPE}\\[.75cm]
+			\end{LARGE}
+			\textbf{\large A}\\
+			\textbf{\large Project Stage-I Report}\\[.5cm]		
+			\textit{\large Submitted in partial fulfillment of\\ the requirements for the award of the degree of}\\[1.5cm]
+			\textup{\Large \textbf{Bachelor of Technology }}\\
+			\textbf{\Large in}\\
+			\textup{\Large \textbf{Computer Science and Engineering} }\\[1cm]
+			\textup{\large Submitted by}\\[1cm]
+			\begin{table}[ht]
+				\centering
+				\begin{tabular}{l r}
+					\textbf{\large A. Bhavya Sree} &\textbf {\large       (21SS1A0501)}\\
+                        \textbf{\large Ch. Akshay Kumar} & \textbf{\large (21SS1A0509})\\
+                        \textbf{\large D. Nandini} &\textbf {\large (21SS1A0510)}\\
+					\textbf{\large Raja Srikar K.} & \textbf{\large (21SS1A0543)}\\
+				\end{tabular}
+			\end{table}
+			\textup{\Large Under the guidance of}\\[.5cm]
+			\textbf{\Large Mrs. K. Neeraja}\\
+                \textup{Assistant Professor}\\[.5cm]
+			%COLLEGE LOGO
+			\begin{figure}[h!]
+				\centering 
+				\includegraphics [width=3cm] {jntu.png}
+				\centering
+			\end{figure}
+			
+			\textup{\Large Department of Computer Science and Engineering}\\[.5cm]
+			\textup{\Large JNTUH University College of Engineering Sultanpur}\\[.25cm]	
+			\textup{\large Sultanpur (V), Pulkal (M), Sangareddy (Dist), Telangana-502273}\\[.25cm]
+			\textup{\large February 2025}
+		\end{center}	
+	\end{titlepage}
+ \newpage 
+\pagenumbering{roman}\setcounter{page}{2}
+\addcontentsline{toc}{chapter}{Certificate}
+\begin{center}
+	
+	{\large\textbf{JNTUH UNIVERSITY COLLEGE OF ENGINEERING SULTANPUR}}\\
+	\textup{\normalsize {Sultanpur(V), Pulkal(M), Sangareddy-502273, Telangana}}\\[1cm]
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=3cm]{jntu.png}
+		\centering
+	\end{figure}
+	{\large\textup {Department of Computer Science and Engineering}}\\[1.0cm]
+	{\Large \textbf{\textit{Certificate}}}\\
+	\vspace{0.5cm}
+	
+\end{center}
+This is to certify that the Project Stage-I Report work entitled \textbf{"Insight Scope"} is a bonafide work carried out by a team consisting of \textbf{A. Bhavya Sree} bearing Roll no.\textbf{21SS1A0501,}
+\textbf{Ch. Akshay Kumar} bearing Roll no.\textbf{21SS1A0509,} \textbf{D. Nandini} bearing Roll no.\textbf{21SS1A0510,} \textbf{Raja Srikar K.} bearing Roll no.\textbf{21SS1A0543,} in partial fulfillment of the requirements for the degree of BACHELOR OF TECHNOLOGY in COMPUTER SCIENCE AND ENGINEERING discipline to  Jawaharlal Nehru Technological University Hyderabad University College of Engineering Sultanpur during the academic year 2024-2025.\\ \\
+The results embodied in this report have not been submitted to any other University or Institution for the award of any degree or diploma.\\
+\vspace{1cm}\\
+\textbf{Guide \hspace{2.18in}   Head of the Department\\}
+\textbf{Mrs. K. Neeraja \hspace{1.46in}  Dr. G. Narsimha \\}
+{Assistant Professor \hspace{1.35in}  Professor, Principal \& Incharge HOD of CSE}
+\begin{center}
+	\vspace{0.5 cm}
+	\textbf{External Examiner}
+	%\vspace{1.5cm}
+\end{center}
+
+
+\newpage
+\addcontentsline{toc}{chapter}{Declaration}	
+\begin{center}
+{\LARGE \textbf{\textit{Declaration}}}
+\end{center}	
+\vspace{2cm}
+We hereby declare that Project Stage-I entitled “\textbf{Insight Scope}” is a bonafide work carried out by a team consisting of \textbf{A. Bhavya Sree} bearing Roll no.\textbf{21SS\\A0501,}
+\textbf{Ch. Akshay Kumar} bearing Roll no.\textbf{21SS1A0509,} \textbf{D. Nandini} bearing Roll no.\textbf{21SS1A0510,}\textbf{Raja Srikar K.} bearing Roll no.\textbf{21SS1A0543,} in partial fulfillment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering discipline to  Jawaharlal Nehru Technological University Hyderabad College of Engineering Sultanpur during the academic year 2024-2025. The results embodied in this report have not been submitted to any other University or Institution for the award of any degree or diploma.\\ \\
+\vspace{4.0cm}
+\begin{table}[ht]
+	\begin{flushright}
+		\begin{tabular}{l r}
+		\textbf{\large A. Bhavya Sree} & \textbf{\large (21SS1A0501)}\\
+        \textbf{\large Ch. Akshay Kumar} & \textbf{\large (21SS1A0509})\\
+        \textbf{\large D. Nandini} & \textbf{\large (21SS1A0510)}\\
+		\textbf{\large Raja Srikar K.} & \textbf{\large (21SS1A0543)}\\
+	\end{tabular}
+	\end{flushright}
+\end{table}
+\newpage
+\addcontentsline{toc}{chapter}{Acknowledgement}	
+\begin{center}
+{\LARGE \textbf{\textit{Acknowledgment}}}
+\end{center}
+\vspace{1cm}
+ {We wish to take this opportunity to express our deep gratitude to all those who helped us in various ways during our Project Stage-I report work. It is our pleasure to acknowledge the help of all those individuals who were responsible for foreseeing the successful completion of our Project Stage-I report.\\ \\
+\hspace*{35pt}We express our sincere gratitude to \textbf{\large Dr. G. Narsimha, Professor , Head Of Department and Principal}, JNTUHUCES for his support during the course period.\\ \\
+\hspace*{35pt}We express our sincere gratitude to \textbf{\large Dr. Y. Raghavender Rao, Professor, Vice Principal}, JNTUHUCES for his support during the course period.\\ \\
+\hspace*{35pt}We are thankful to our Guide \textbf{\large Mrs. K. Neeraja, Assistant Professor} for her effective suggestions  during the course period.\\ \\
+\hspace*{35pt}Finally, we express our gratitude with great admiration and respect to our faculty for their moral support and encouragement throughout the course.}\\
+%\vspace{2.0cm}
+\begin{table}[ht]
+	\begin{flushright}
+		\begin{tabular}{l r}
+		\textbf{\large A. Bhavya Sree} & \textbf{\large (21SS1A0501)}\\
+        \textbf{\large Ch. Akshay Kumar} & \textbf{\large (21SS1A0509})\\
+        \textbf{\large D. Nandini} & \textbf{\large (21SS1A0510)}\\
+		\textbf{\large Raja Srikar K.} & \textbf{\large (21SS1A0543)}\\
+		\end{tabular}
+	\end{flushright}
+\end{table}
+
+\newpage
+%\renewcommand{\baselinestretch}{0.1}
+\tableofcontents
+\addtocontents{toc}
+
+\newpage
+\addcontentsline{toc}{chapter}{Abstract}
+\begin{center}
+{\LARGE \textbf{\textit{Abstract}}}
+\end{center}
+\vspace{1cm}
+{\Large
+	{\large This project creates an easy-to-use Insight Scope designed to 
+help users efficiently find financial and stock market insights from 
+online articles. Users can either enter URLs or upload text files to pull 
+out relevant content, which is then processed using LangChain’s 
+Unstructured URL Loader. OpenAI’s embeddings transform the 
+article content into an embedding vector, allowing for machine￾readable insights. The FAISS similarity search library is utilized to 
+quickly retrieve pertinent information. Users can engage with the 
+system by asking finance-related questions and receive accurate 
+answers powered by large language models. The responses come with 
+source URLs for straightforward verification, ensuring trustworthy 
+research results. This tool streamlines the process of gathering 
+financial information, making it user-friendly even for those without 
+technical expertise. Its goal is to save time and effort by automating 
+the extraction and analysis of stock market data. Overall, this solution 
+is perfect for researchers, investors, and analysts looking for timely 
+financial insights.}
+%\end{LARGE}
+
+\newpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+	
+\newpage
+\pagenumbering{arabic}
+\chapter{INTRODUCTION}
+The Insight Scope is an innovative solution designed to address the challenges faced by individuals and organizations in extracting meaningful insights from financial and stock market-related news articles. In the fast-paced world of financial decision-making, the ability to quickly analyze and extract relevant information is crucial.
+
+This project combines advanced AI technologies, such as LangChain's UnstructuredURL Loader, OpenAI embeddings, and FAISS, to streamline the process of retrieving and analyzing news data. By leveraging natural language processing and similarity search algorithms, the tool enhances the user's ability to discover patterns, identify market trends, and make informed decisions.
+
+The Insight Scope represents a significant step forward in simplifying complex tasks associated with financial research, making it a valuable resource for analysts, planners, and researchers alike. Its user-centric design ensures accessibility, efficiency, and reliability, setting a benchmark for intelligent news analysis systems.
+\section{Project Overview}
+The Insight Scope revolutionizes the analysis of financial and stock market-related news by leveraging advanced artificial intelligence. By integrating LangChain’s UnstructuredURL Loader, it efficiently extracts insights from a wide range of online articles. OpenAI embeddings enhance the tool's understanding of language, providing contextually rich information. Additionally, FAISS (Facebook AI Similarity Search) allows for rapid retrieval of relevant data, making trend identification seamless. This powerful combination empowers investors and analysts to make informed decisions based on real-time insights. Ultimately, the tool streamlines the analysis process and fosters a deeper understanding of market dynamics. Its innovative approach is set to transform how financial professionals engage with news content.
+\\
+
+
+\section{Purpose}
+The primary purpose of this project is to develop an efficient and scalable tool specifically designed for financial news research. In an era where information is abundant, this tool aims to streamline the process of gathering and analyzing vast amounts of data from various online articles. By leveraging advanced algorithms and artificial intelligence, it transforms raw data into actionable insights that users can readily apply. This capability is crucial for investors, analysts, and financial professionals who need to stay informed about market trends and developments. The tool not only enhances the speed of information processing but also improves the accuracy of insights derived from complex narratives. Ultimately, it serves as a vital resource for making informed decisions in a fast-paced financial landscape. Through its innovative approach, the tool seeks to empower users with the knowledge they need to navigate the intricacies of the stock market effectively.
+\section{Existing System}
+\begin{itemize}
+	\item Traditional methods of financial research require manual searching through numerous sources, which can be labor-intensive and inefficient.
+	\item The process involves extensive reading of articles and reports, making it difficult to quickly identify relevant information.
+	\item Manual analysis of data is often prone to human errors, leading to potential inaccuracies in insights and conclusions.
+\end{itemize}
+\subsection{Drawbacks of Existing System}
+\begin{itemize}
+	\item Manual data analysis is labor intensive.
+	\item Lack of AI-driven analytics for insight.
+	\item Limited tools for personalized search and filtering.
+\end{itemize}
+\section{Proposed System}
+ The proposed system takes advantage of the robust LangChain framework in conjunction with FAISS to facilitate efficient searches for similarity in large datasets. Using OpenAI embeddings, the system ensures that text is accurately represented, capturing the nuances and context of financial language. This combination improves the retrieval of relevant financial information, allowing users to quickly access critical information and make informed decisions.
+\subsection{ Advantages of Proposed System}
+\begin{itemize}
+	\item Automated insights extraction.
+	\item Real-time data processing.
+	\item Enhanced search accuracy with FAISS.
+	\item User-friendly interface for non technical users. 
+	
+\end{itemize}
+  \section{Scope}
+  This project aims to significantly streamline the analysis of financial news, making it more efficient and accessible for various stakeholders in the financial sector. Market analysts will benefit from the tool's ability to quickly identify trends and insights, enabling them to make timely recommendations based on real-time data. Financial planners can utilize the system to stay informed about market developments, helping them to craft more effective investment strategies for their clients. Additionally, researchers will find the tool invaluable for conducting comprehensive studies, as it allows for the rapid aggregation and analysis of relevant news articles, ultimately enhancing the quality and depth of their research.
+\section{Conclusion}
+In this chapter, we have discussed The project overview, purpose, existing, proposed system and scope of the project. The main objectives and Applications of the project are discussed in detail.
+
+\newpage
+
+\chapter{LITERATURE SURVEY}
+\section{Similarity Search Techniques in News Analysis}
+Recent advancements in similarity search have significantly improved the accuracy and efficiency of analyzing and retrieving information from unstructured data, particularly in the context of news articles. These developments are crucial, as unstructured data often contains valuable insights that can be difficult to extract using traditional methods. Techniques like FAISS (Facebook AI Similarity Search) have gained widespread adoption for performing high-dimensional vector similarity searches, allowing for rapid identification of relevant information. By transforming text into high-dimensional vectors, FAISS enables the system to compare and retrieve similar content with remarkable speed and precision. This capability is especially beneficial in financial news analysis, where timely access to pertinent information can influence decision-making. As a result, organizations can leverage these advanced techniques to enhance their data analysis processes, leading to more informed strategies and outcomes. Overall, the integration of these innovative methods marks a significant step forward in the field of information retrieval from unstructured data.
+\section{AI Applications in Financial Research}
+AI technologies, including machine learning and natural language processing (NLP), are becoming integral to financial research, revolutionizing how analysts interpret data. Machine learning algorithms can analyze historical market data to identify patterns and correlations, enabling more accurate predictions of future market trends. Meanwhile, natural language processing allows for the extraction of meaningful insights from vast amounts of unstructured data, such as news articles and social media posts. By automating these processes, financial professionals can save time and reduce the risk of human error, leading to more informed decision-making. As these technologies continue to evolve, their applications in financial research are expected to expand, further enhancing the ability to navigate complex market dynamics.
+\section{LangChain Framework}
+LangChain simplifies the development of AI applications by providing a modular architecture that allows for the seamless integration of multiple data sources and models. Its UnstructuredURL Loader is especially valuable for extracting data from web pages, enabling users to gather information from online articles with ease. By automating the data extraction process, LangChain significantly reduces the time and effort required for data collection. This efficiency empowers developers to focus more on analysis and decision-making, enhancing the overall effectiveness of their AI-driven solutions.
+
+\section{Use of FAISS in AI Applications}
+Facebook’s FAISS (Facebook AI Similarity Search) is a powerful library specifically optimized for conducting efficient similarity searches and clustering of dense vectors. By leveraging FAISS in this project, users can achieve fast and accurate retrieval of relevant insights from extensive datasets, which is crucial for timely decision-making. This capability enhances the overall effectiveness of data analysis, allowing financial professionals to quickly access the information they need to inform their strategies.
+\section{Conclusion}
+In summary, the integration of similarity search techniques and AI applications like LangChain and FAISS greatly enhances the analysis of financial news. These tools enable efficient extraction of insights from unstructured data, leading to more informed decision-making. As technology advances, their impact on financial research will continue to grow, improving market analysis capabilities.
+\chapter{SYSTEM ANALYSIS}
+
+\section{Data Collection}
+\begin{itemize}
+	\item Collect news articles using the UnstructuredURL Loader.
+	\item Preprocess data for consistency and accuracy.
+	\item Store data in a structured format suitable for similarity search.
+	
+\end{itemize}
+\section{Reliability}
+\begin{itemize}
+	\item Ensure high accuracy in data processing to provide reliable insights and analysis.
+	\item Implement advanced algorithms for effective similarity search, enhancing the retrieval of relevant information.
+	\item Maintain robust error-handling mechanisms to identify and address issues promptly, minimizing disruptions.
+	\item Regularly update and optimize the system to adapt to evolving data sources and improve overall performance.
+\end{itemize}
+\section{Availability}
+\begin{itemize}
+	\item Ensure the tool is accessible 24/7 with minimal downtime to support users across different time zones and enhance usability. 
+	\item Provide platform-independent functionality, allowing users to access the tool seamlessly on various devices and operating systems.	
+\end{itemize}
+\section{Constraints}
+\begin{itemize}
+    \item The tool's functionality relies on internet connectivity for real-time data extraction, which may affect performance in areas with limited access.
+    \item Resource-intensive operations necessitate optimized hardware to ensure smooth processing and efficient data handling.
+    \item Users may need to invest in adequate infrastructure to support the tool's requirements, potentially increasing operational costs.
+\end{itemize}
+\section{Portability}
+\begin{itemize}
+	\item The tool is designed for seamless deployment across various platforms, ensuring compatibility with different operating systems.
+	\item This cross-platform functionality allows users to easily integrate the tool into their existing workflows, enhancing accessibility and usability.	
+\end{itemize}
+\section{Performance}
+\begin{itemize}
+	\item Optimize the tool for quick retrieval of insights to enhance user experience and facilitate timely decision-making.
+	\item Implement caching mechanisms to improve response times, reducing the load on the system and ensuring faster access to frequently requested data.
+	
+\end{itemize}
+\section{System Architecture}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.5]{flow1.png}
+	\end{center}
+	\caption{\textit{\textbf{System Architecture}}}
+\end{figure}
+\begin{itemize}
+    \item The process starts with a user inputting a URL for an article.
+    \item An UnstructuredURL Loader fetches the article from the provided URL.
+    \item LangChain processes the article data, preparing it for further analysis.
+    \item OpenAI generates embeddings for the article text, converting the text into numerical representations.
+    \item The backend stores these embeddings in a FAISS index, a specialized data structure for similarity search.
+    \item FAISS performs a similarity search using the stored embeddings to find similar articles.
+    \item FAISS returns relevant results based on the similarity search, identifying articles most similar to the input article.
+    \item The backend displays the similar articles to the user, providing them with relevant and related content based on their initial input.
+\end{itemize}
+\section{Feasibility Study}
+\subsection{Economic Feasibility}
+Open-source libraries provide pre-written code and functionalities that developers can readily use.This reduces the time and effort required for building software from scratch.As a result, development costs are minimized, leading to cost-effective software solutions.
+\subsection{Technical Feasibility}
+This system leverages popular AI tools and frameworks to streamline the process of finding relevant articles. It utilizes LangChain for processing text data, OpenAI for generating embeddings, and FAISS for efficient similarity search. This approach ensures that the system relies on established and well-maintained technologies, promoting stability and reliability. Furthermore, the use of common tools allows for easier integration with other AI systems and workflows, contributing to a wider range of applications and possibilities.
+\subsection{Operational Feasibility}
+The design prioritizes user experience, making it easy for both technical and non-technical individuals to navigate and interact with the system.The interface is intuitive, allowing users to understand and complete tasks without requiring specialized knowledge.Clear and concise language is employed throughout the system, ensuring that all users can readily comprehend the instructions and information presented.The design is visually appealing and consistent, making it easy for users to find their way around and locate desired functions.This emphasis on user-friendliness enhances accessibility and promotes a positive experience for all users.
+
+
+\section{Software Requirements}
+\begin{itemize}
+    \item \textbf{Programming Language:}
+    \begin{itemize}
+        \item python
+    \end{itemize}
+    \item \textbf{Libraries/Tools:}
+    \begin{itemize}
+        \item LangChain
+        \item OpenAI API
+        \item FAISS
+        \item Flask or FastAPI
+        \item SQL/NoSQL Database
+    \end{itemize}
+\end{itemize}
+\section{Hardware Requirements}
+\begin{itemize}
+    \item 4GB RAM or more
+    \item A Laptop/Desktop
+    \item Internet Connection
+    \item Processor : intel i5 or Higher
+    \item Hard Disk 256 SSD or more
+\end{itemize}
+\section{Conclusion}
+The system architecture for finding similar news articles presented in this document is a robust and effective solution. The process leverages powerful tools like LangChain, OpenAI, and FAISS to ensure accuracy and efficiency in data processing and similarity search. The user-friendly design caters to a wide range of users, making it accessible to both technical and non-technical individuals. The system's focus on scalability and adaptability ensures it can readily integrate with existing workflows and expand its functionality over time. Ultimately, this system offers a valuable tool for individuals and organizations seeking to efficiently discover relevant news articles and stay informed.
+
+\newpage
+\chapter{SYSTEM DESIGN}
+
+Design is the abstraction of a solution it is a general description of the solution to a problem without the details. Design is view patterns seen in the analysis phase to be a pattern in a design phase. After design phase we can reduce the time required to create the implementation.\\
+\hspace*{35pt}A UML diagram is a diagram based on the UML (Unified Modeling Language) with the purpose of visually representing a system along with its main actors, roles, actions, artifacts or classes, in order to better understand, alter, maintain, or document information about the system.
+
+
+\textbf{What is UML ?}\\UML is an acronym that stands for Unified Modelling Language. Simply put, UML is a modern approach to modelling and documenting software. In fact, it’s one of the most popular business process modelling techniques.\\
+\hspace*{35pt}It is based on diagrammatic representations of software components. As the old proverb says: “a picture is worth a thousand words”. By using visual representations, we are able to better understand possible flaws or errors in software or business processes. Building Blocks of the UML: The vocabulary of the UML encompasses three kinds of building blocks.
+
+
+\begin{itemize}
+    \item Things: Things are the abstractions that are first-class citizens in a model
+    \item Relationships: relationships tie these things together
+    \item Diagrams: diagrams group interesting collections of things
+\end{itemize}
+
+\section{Use Case Diagram}
+Use case diagrams are a set of use cases, actors, and their relationships. They represent the use case view of a system.\\
+\hspace*{35pt}A use case represents a particular functionality of a system. Hence, use case diagram is used to describe the relationships among the functionalities and their internal/external controllers. These controllers are known as actors. In this project, faculty and student are the actors.\\ 
+\\
+\\
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.5]{use case.png}
+	\end{center}
+	\textit{\textbf{\caption{\textit{\textbf{Use Case Diagram of System }}}}}
+\end{figure}
+\section{Activity Diagram}
+Activity diagrams are used to document workflows in a system, from the business level down to the operational level. The general purpose of Activity diagrams is to focus on flows driven by internal processing vs. external events.\\
+\hspace*{35pt}Activities are nothing but the functions of a system. Numbers of activity diagrams are prepared to capture the entire flow in a system.\\
+\\
+\\
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.5]{activity.png}
+	\end{center}
+	\textbf{\caption{\textit{\textbf{Activity Diagram of System }}}}
+\end{figure}
+
+\section{Class Diagram}
+Class diagram is a static diagram. It represents the static view of an application. Class diagram is not only used for visualizing, describing, and documenting different aspects of a system but also for constructing executable code of the software application.\\
+\hspace*{35pt}Class diagram describes the attributes and operations of a class and also the constraints imposed on the system. The class diagrams are widely used in the modelling of object-oriented systems because they are the only UML diagrams, which can be mapped directly with object-oriented languages.\\
+\hspace*{35pt}Class diagram shows a collection of classes, interfaces, associations, collaborations, and constraints. It is also known as a structural diagram.
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[scale=0.5]{class.png}
+	\end{center}
+	\textbf{\caption{\textit{\textbf{Class Diagram of System }}}}
+\end{figure}
+\newpage
+\section{Sequence Diagram}
+A sequence diagram is a Unified Modeling Language (UML) diagram that illustrates
+ the sequence of messages between objects in an interaction. A sequence diagram con
+sists of a group of objects that are represented by lifelines, and the messages that they
+ exchange over time during the interaction.
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=15cm]{sequence.png}
+	\end{center}
+	\textbf{\caption{\textit{\textbf{Activity Diagram of System }}}}
+\end{figure}
+\section{Conclusion}
+A UML diagram is a diagram based on the UML (Unified Modeling Language) with the purpose of visually representing a system along with its main actors, roles, actions, artifacts or classes, in order to better understand, alter, maintain, or document information about the system.
+\end{document}
